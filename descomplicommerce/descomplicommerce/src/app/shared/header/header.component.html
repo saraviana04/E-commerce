@@ -1,0 +1,7 @@
+<header class="card" style="display:flex;justify-content:space-between;align-items:center;margin:12px 24px">
+  <div class="logo" style="margin:0">Descomplicommerce</div>
+  <div class="muted">
+    🛒 <strong>{{ qtd$ | async }}</strong> itens —
+    {{ (total$ | async) | currency:'BRL':'symbol':'1.2-2' }}
+  </div>
+</header>

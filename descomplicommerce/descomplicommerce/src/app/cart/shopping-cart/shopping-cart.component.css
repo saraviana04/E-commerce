@@ -1,0 +1,36 @@
+
+/* container do carrinho: largura máx. 400px */
+.cart {
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+/* lista e itens */
+.cart-list { list-style: none; padding: 0; margin: 12px 0; display: grid; gap: 8px; }
+.cart-item { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; }
+.cart-item .info { display: flex; flex-direction: column; }
+.cart-item .actions { display: flex; gap: 8px; align-items: center; }
+.cart-item input[type="number"] { width: 64px; }
+
+/* botão principal do carrinho: #90ee90 */
+.checkout {
+  background: #90ee90;          /* <= cor exigida */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* demais botões */
+button.remove, .clear {
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+.buttons { display: flex; gap: 8px; }

@@ -1,0 +1,3 @@
+.product-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); }
+.product { padding: 12px; border: 1px solid #eee; border-radius: 8px; }
+.product button { cursor: pointer; }

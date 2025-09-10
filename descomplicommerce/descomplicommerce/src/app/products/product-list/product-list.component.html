@@ -1,0 +1,16 @@
+<div class="card">
+  <h2 style="margin:0 0 12px">Produtos</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px">
+    <div class="card" *ngFor="let p of products" style="box-shadow:none;border:1px solid #f1f1f1">
+      <!-- (coloque imagem se tiver: <img [src]="p.imagem" .../> ) -->
+      <h3 style="margin:6px 0 4px;text-align:center">{{ p.nome }}</h3>
+      <p class="price" style="text-align:center;margin:0 0 12px">
+        {{ p.preco | currency:'BRL':'symbol':'1.2-2' }}
+      </p>
+      <div style="display:flex;justify-content:center">
+        <button class="btn" (click)="add(p)">Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
